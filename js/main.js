@@ -11,6 +11,9 @@
 // BONUS 1: Crea un container nel DOM e aggiungendo (attravero la funzione append())
 //          un elemento html con il numero o la stringa corretta da mostrare.
 
+// BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1,
+//          a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+
 // ----------------------------------------------------------------
 
 // BONUS. Creo una variabile
@@ -40,16 +43,19 @@ for (let index = 1; index <= 100; index++) {
     // ...5) stampo i numeri multipli sia di 3 che di 5
     if (index % 3 == 0 && index % 5 == 0) {
         console.log("fizzbuzz");
+        smallBox.classList.add(`third_sp`);  //*bonus 2*
         smallBox.innerHTML = "fizzbuz"; //visualizzo sulla pagina l'output
     }
     //...2) stampo "fizz" al posto del numero multiplo di 3
     else if (index % 3 == 0) {
         console.log("fizz");
+        smallBox.classList.add(`first_sp`); //*bonus 2*
         smallBox.innerHTML = `fizz`; //visualizzo sulla pagina l'output
     }
     // ...3) stampo "buzz" al posto del numero multiplo di 5
     else if (index % 5 == 0) {
         console.log("buzz");
+        smallBox.classList.add(`second_sp`); //*bonus 2*
         smallBox.innerHTML = `buzz`; //visualizzo sulla pagina l'output
     }
     // ...4) stampo il numero index 

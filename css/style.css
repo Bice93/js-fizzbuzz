@@ -1,0 +1,36 @@
+body{
+    background-color: #4d3652;
+}
+h1{
+    color: white;
+    font-size: 70px;
+}
+
+#container_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.small_box{
+    background-color: #e2cee7;
+    margin: 5px 5px;
+    width: calc(100% / 6 - 10px);
+    height: 150px;
+    text-align: center;
+    line-height: 150px; 
+    font-weight: bolder;
+    font-size: 20px;
+}
+/* **********Bonus 2******** */
+.first_sp{
+    background-color: #763f80;
+    color: white;
+}
+
+.second_sp{
+    background-color: #b404c1;
+    color: white;
+}
+
+.third_sp{
+    background-color: #c79901;
+}
