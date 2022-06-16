@@ -8,26 +8,53 @@
 // Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
+// BONUS 1: Crea un container nel DOM e aggiungendo (attravero la funzione append())
+//          un elemento html con il numero o la stringa corretta da mostrare.
 
 // ----------------------------------------------------------------
+
+// BONUS. Creo una variabile
+const containerBox = document.getElementById(`container_box`);
+
+
+// --START-------------------CICLO FOR--------------------------
 // 1) stampo in console i numeri da 1 a 100
 for (let index = 1; index <= 100; index++) {
-    // console.log(index); 
+    // console.log(index);
 
+    // *********************BONUS***************************
+    // mi creo un elemento vuoto all'interno del container_box
+        const smallBox = document.createElement(`div`);
+
+    // assegno all'elemento delle classi
+        smallBox.classList.add(`small_box`);
+
+    // inserisco il contenuto all'interno del mio nuovo elemento
+        smallBox.innerHTML = index;
+
+    // aggiungo il nuovo elemento al padre (in questo caso è: container_box)
+        containerBox.append(smallBox);
+
+    // ****************************************************
+    // ---------------------------IF---------------------
     // ...5) stampo i numeri multipli sia di 3 che di 5
     if (index % 3 == 0 && index % 5 == 0) {
-        console.log("fizzbuzz")
+        console.log("fizzbuzz");
+        smallBox.innerHTML = "fizzbuz"; //visualizzo sulla pagina l'output
     }
     //...2) stampo "fizz" al posto del numero multiplo di 3
     else if (index % 3 == 0) {
-        console.log("fizz")
+        console.log("fizz");
+        smallBox.innerHTML = `fizz`; //visualizzo sulla pagina l'output
     }
     // ...3) stampo "buzz" al posto del numero multiplo di 5
     else if (index % 5 == 0) {
-        console.log("buzz")
+        console.log("buzz");
+        smallBox.innerHTML = `buzz`; //visualizzo sulla pagina l'output
     }
     // ...4) stampo il numero index 
      else {
-        console.log(index)
+        console.log(index);
+        smallBox.innerHTML = index; //visualizzo sulla pagina l'output
     }
-}
+};
