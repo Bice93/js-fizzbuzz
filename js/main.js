@@ -12,5 +12,18 @@
 // ----------------------------------------------------------------
 // 1) stampo in console i numeri da 1 a 100
 for (let index = 1; index <= 100; index++) {
-    console.log(index); 
+    // console.log(index); 
+    
+    //...2) stampo "fizz" al posto del numero multiplo di 3
+    if (index % 3 == 0) {
+        console.log("fizz")
+    }
+    // ...3) stampo "buzz" al posto del numero multiplo di 5
+    else if (index % 5 == 0) {
+        console.log("buzz")
+    }
+    // ...4) stampo il numero index 
+     else {
+        console.log(index)
+    }
 }
