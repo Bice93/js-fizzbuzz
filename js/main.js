@@ -13,9 +13,13 @@
 // 1) stampo in console i numeri da 1 a 100
 for (let index = 1; index <= 100; index++) {
     // console.log(index); 
-    
+
+    // ...5) stampo i numeri multipli sia di 3 che di 5
+    if (index % 3 == 0 && index % 5 == 0) {
+        console.log("fizzbuzz")
+    }
     //...2) stampo "fizz" al posto del numero multiplo di 3
-    if (index % 3 == 0) {
+    else if (index % 3 == 0) {
         console.log("fizz")
     }
     // ...3) stampo "buzz" al posto del numero multiplo di 5
